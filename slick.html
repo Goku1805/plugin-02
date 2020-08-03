@@ -83,13 +83,10 @@
 	<script>
 		$( document ).ready(function(){
 			var sliders = $('.carousel');
-			var contentSlider=$('.container-slide');
-			var row = contentSlider.find('.row');
-			var slides = sliders.find('.slides');
-			slides.each(function(){
-
-				
-				$(this).slick({
+			sliders.each(function(){
+				var firstSlide = $(this).find('.slides');
+				var row=$(this).find('.row')
+				firstSlide.slick({
  				
   					slidesToShow: 1,
   					slidesToScroll: 1,
@@ -98,16 +95,16 @@
   					asNavFor: row
 				
 			});
-			row.each(function(){
+			
 
-				$(this).slick({
+				row.slick({
 				  slidesToShow: 3,
 				  slidesToScroll: 1,
-				  asNavFor: slides,
+				  asNavFor: firstSlide,
 				  centerMode: true,
 				  focusOnSelect: true
 				});
-			});
+			
 			
 		});
 	});		
