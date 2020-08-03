@@ -1,12 +1,16 @@
 .container{
 	width:100%;
-
+	overflow: hidden;
 }
 *{
 	box-sizing: border-box;
 }
 .carousel{
 	width: 100%;
+	margin:20px;
+	position : relative;
+	margin:20px;
+	padding: 20px;
 }
 .slides{
 
@@ -20,17 +24,14 @@ img{
 	height:95%;
 }
 .prev{
-	font-size:20px;
-	color: black;
-	position: fixed;
-	left:0;
-	top:220px;
+	position: absolute;
+	top:210px;
+	left:500px;
 	
 }
 .forward{
-	font-size:20px;
-	color: black;
-	position: fixed;
-	right:0;
-	top:220px;
+	position: absolute;
+	right:500px;
+	top:210px;
+	
 }
