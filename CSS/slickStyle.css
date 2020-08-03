@@ -7,22 +7,19 @@
 }
 .carousel{
 	position: relative;
-}
-.container-slide{
-	position: absolute;
-	left:0;
-	bottom: 0;
-	top:300px;
-	width:100%;
-}
-.slides{
-	
-	transform: translateX(470px);
+	height: 10%;
+		
 }
 
-.row{
+.slides{
+	display: flex;
+	justify-content: center;
 	
 }
+img{
+	width : 100%;
+}
+
 .col{
 	margin: 20px;
 }
