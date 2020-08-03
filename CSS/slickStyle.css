@@ -5,7 +5,10 @@
 *{
 	box-sizing: border-box;
 }
-.images{
+.carousel{
+	width: 100%;
+}
+.slides{
 
 	display: flex;
   	justify-content: center;

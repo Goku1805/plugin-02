@@ -11,30 +11,32 @@
 </head>
 <body>
 	<div class="container">
-		<div class="images ">
-			<div><img src="http://lorempixel.com/400/200" /></div>
-			<div><img src="http://lorempixel.com/g/400/200" /></div>
-			<div><img src="http://lorempixel.com/b/400/200" /></div>
-			<div><img src="http://lorempixel.com/v/400/200" /></div>
-			<div><img src="http://lorempixel.com/s/400/200" /></div>
-			<div><img src="http://lorempixel.com/o/400/200" /></div>
-		</div>
-		<div class="prev">
-			<i class="fa fa-backward" aria-hidden="true"></i>
-		</div>
-		<div class="forward">
-			<i class="fa fa-forward" aria-hidden="true"></i>
+		<div class="carousel-1">
+			<div class="slides ">
+				<div><img src="http://lorempixel.com/400/200" /></div>
+				<div><img src="http://lorempixel.com/g/400/200" /></div>
+				<div><img src="http://lorempixel.com/b/400/200" /></div>
+				<div><img src="http://lorempixel.com/v/400/200" /></div>
+				<div><img src="http://lorempixel.com/s/400/200" /></div>
+				<div><img src="http://lorempixel.com/o/400/200" /></div>
+			</div>
+			<div class="prev">
+				<i class="fa fa-backward" aria-hidden="true"></i>
+			</div>
+			<div class="forward">
+				<i class="fa fa-forward" aria-hidden="true"></i>
+			</div>
 		</div>
 	</div>
 	<script>
 		$(function(){
-			$('.images').slick({
+			$('.slides').slick({
  				infinite: true,
   				slidesToShow: 3,
   				slidesToScroll: 3,
   				arrows:true,
-  				prevArrow:'.prev',
-  				nextArrow:'.forward',
+  				prevArrow:'.carousel-1 .prev',
+  				nextArrow:'.carousel-1 .forward',
   				responsive: [
 							    {
 							      breakpoint: 1024,
