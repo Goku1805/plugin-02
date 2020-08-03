@@ -1,37 +1,30 @@
 .container{
 	width:100%;
-	overflow: hidden;
+	text-align: center;
 }
 *{
 	box-sizing: border-box;
 }
 .carousel{
-	width: 100%;
-	margin:20px;
-	position : relative;
-	margin:20px;
-	padding: 20px;
+	position: relative;
+}
+.container-slide{
+	position: absolute;
+	left:0;
+	bottom: 0;
+	top:300px;
+	width:100%;
 }
 .slides{
+	
+	transform: translateX(470px);
+}
 
-	display: flex;
-  	justify-content: center;
-	margin-left: 30px;	
-}
-img{
-	
-	width:95%;
-	height:95%;
-}
-.prev{
-	position: absolute;
-	top:210px;
-	left:500px;
+.row{
 	
 }
-.forward{
-	position: absolute;
-	right:500px;
-	top:210px;
-	
+.col{
+	margin: 20px;
 }
+
+
