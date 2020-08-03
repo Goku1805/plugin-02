@@ -83,14 +83,13 @@
 	<script>
 		$( document ).ready(function(){
 			var sliders = $('.carousel');
-			var row = $('.row');
-			var slides = $(this).find('.slides');
-			var prevArr = $(this).find('.prev');
-			var forArr = $(this).find('.forward');
-			sliders.each(function(){
-				console.log(sliders[0]);
+			var contentSlider=$('.container-slide');
+			var row = contentSlider.find('.row');
+			var slides = sliders.find('.slides');
+			slides.each(function(){
+
 				
-				slides.slick({
+				$(this).slick({
  				
   					slidesToShow: 1,
   					slidesToScroll: 1,
@@ -99,14 +98,17 @@
   					asNavFor: row
 				
 			});
+			row.each(function(){
 
-			row.slick({
+				$(this).slick({
 				  slidesToShow: 3,
 				  slidesToScroll: 1,
 				  asNavFor: slides,
 				  centerMode: true,
 				  focusOnSelect: true
-});
+				});
+			});
+			
 		});
 	});		
 
